@@ -2,6 +2,7 @@ import CustomImage from '../components/custom-image';
 import PublicationSubscribeStandOut from '../components/publication-subscribe-standout';
 import { resizeImage } from '../utils/image';
 import { AppProvider } from '../components/contexts/appContext';
+import { Layout } from '../components/layout';
 
 import BlogPostPreview from '../components/magazine-blog-post-preview';
 import {
@@ -40,6 +41,7 @@ const Newsletter = (props: Props) => {
 
   return (
     <AppProvider publication={publication}>
+      <Layout>
       <Header currentMenuId={currentMenuId} isHome={false}/>
       <div className="blog-page-area mx-auto min-h-screen px-4 pb-8 pt-20 md:px-10 md:pt-20">
         <div className="blog-page-card container relative z-30 mx-auto grid grid-flow-row grid-cols-8 pb-0 2xl:grid-cols-10">
@@ -83,6 +85,7 @@ const Newsletter = (props: Props) => {
 					darkMode={publication.preferences.darkMode}
 				/>
 				) : null}
+         </Layout>
     </AppProvider>
   );
 };
