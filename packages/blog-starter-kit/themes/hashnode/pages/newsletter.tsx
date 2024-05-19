@@ -74,17 +74,6 @@ const Newsletter = (props: Props) => {
           </>
         )}
       </div>
-      {publication ? (
-				<PublicationFooter
-					authorName={publication.author.name}
-					title={publication.title}
-					imprint={publication.imprint}
-					disableFooterBranding={publication.preferences.disableFooterBranding}
-					isTeam={publication.isTeam}
-					logo={publication.preferences.logo}
-					darkMode={publication.preferences.darkMode}
-				/>
-				) : null}
          </Layout>
     </AppProvider>
   );
