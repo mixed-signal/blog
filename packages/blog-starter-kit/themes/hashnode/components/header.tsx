@@ -43,7 +43,7 @@ export const Header = (props: Props) => {
 						)}
 					>
 						<HeaderBlogSearch publication={publication} />
-						<Button as="a" href="#" type="primary" label="Sign up" />
+						<Button as="a" href="https://www.linkedin.com/in/gursimran-singh-b590971a5/" type="primary" label="Let's Connect" />
 					</div>
 				</div>
 
